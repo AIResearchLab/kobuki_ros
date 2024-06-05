@@ -162,21 +162,67 @@
 			<update_rate>50</update_rate>
 			<visualize>false</visualize>
 			<imu>
-			<noise>
-				<type>gaussian</type>
-				<rate>
-					<mean>0.0</mean>
-					<stddev>${0.0014*0.0014}</stddev> <!-- 0.25 x 0.25 (deg/s) -->
-					<bias_mean>0.0</bias_mean>
-					<bias_stddev>0.0</bias_stddev>
-				</rate>
-					<accel> <!-- not used in the plugin and real robot, hence using tutorial values -->
+				<noise>
+					<type>gaussian</type>
+					<rate>
 						<mean>0.0</mean>
-						<stddev>1.7e-2</stddev>
-						<bias_mean>0.1</bias_mean>
-						<bias_stddev>0.001</bias_stddev>
-					</accel>
-			</noise>
+						<stddev>${0.0014*0.0014}</stddev> <!-- 0.25 x 0.25 (deg/s) -->
+						<bias_mean>0.0</bias_mean>
+						<bias_stddev>0.0</bias_stddev>
+					</rate>
+				</noise>
+				<angular_velocity>
+					<x>
+						<noise type="gaussian">
+							<mean>0.0</mean>
+							<stddev>${0.0014*0.0014}</stddev>
+							<bias_mean>0.0</bias_mean>
+							<bias_stddev>0.0</bias_stddev>
+						</noise>
+					</x>
+					<y>
+						<noise type="gaussian">
+							<mean>0.0</mean>
+							<stddev>${0.0014*0.0014}</stddev>
+							<bias_mean>0.0</bias_mean>
+							<bias_stddev>0.0</bias_stddev>
+						</noise>
+					</y>
+					<z>
+						<noise type="gaussian">
+							<mean>0.0</mean>
+							<stddev>${0.0014*0.0014}</stddev>
+							<bias_mean>0.0</bias_mean>
+							<bias_stddev>0.0</bias_stddev>
+						</noise>
+					</z>
+				</angular_velocity>
+				<linear_acceleration>
+					<x>
+						<noise type="gaussian">
+							<mean>0.0</mean>
+							<stddev>1.7e-2</stddev>
+							<bias_mean>0.1</bias_mean>
+							<bias_stddev>0.001</bias_stddev>
+						</noise>
+					</x>
+					<y>
+						<noise type="gaussian">
+							<mean>0.0</mean>
+							<stddev>1.7e-2</stddev>
+							<bias_mean>0.1</bias_mean>
+							<bias_stddev>0.001</bias_stddev>
+						</noise>
+					</y>
+					<z>
+						<noise type="gaussian">
+							<mean>0.0</mean>
+							<stddev>1.7e-2</stddev>
+							<bias_mean>0.1</bias_mean>
+							<bias_stddev>0.001</bias_stddev>
+						</noise>
+					</z>
+				</linear_acceleration>
 			</imu>
 		</sensor>
 		</gazebo>

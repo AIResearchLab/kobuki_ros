@@ -114,8 +114,12 @@ KeyOp::KeyOp(const rclcpp::NodeOptions & options) : rclcpp::Node("kobuki_keyop_n
 
   timer_ = this->create_wall_timer(std::chrono::milliseconds(100), std::bind(&KeyOp::spin, this));
 
+  RCLCPP_INFO(get_logger(), "KeyOp: Spinned.");
+
   // start keyboard input thread
   thread_ = std::thread(&KeyOp::keyboardInputLoop, this);
+
+  RCLCPP_INFO(get_logger(), "KeyOp: Listening to Keyboard.");
 }
 
 KeyOp::~KeyOp()
@@ -310,7 +314,7 @@ void KeyOp::disable()
 
   if (power_status_)
   {
-    RCLCPP_INFO(get_logger(), "KeyOp: die, die, die (disabling power to the device's motor system).");
+    RCLCPP_INFO(get_logger(), "KeyOp: Disabling power to the device's motor system.");
     auto power_cmd = std::make_unique<kobuki_ros_interfaces::msg::MotorPower>();
     power_cmd->state = kobuki_ros_interfaces::msg::MotorPower::OFF;
     motor_power_publisher_->publish(std::move(power_cmd));

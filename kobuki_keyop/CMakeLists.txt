@@ -30,6 +30,11 @@ install(TARGETS kobuki_keyop
   LIBRARY DESTINATION lib
   RUNTIME DESTINATION bin
 )
+
+install(DIRECTORY launch 
+  DESTINATION share/${PROJECT_NAME}
+)
+
 install(DIRECTORY include/${PROJECT_NAME}/
   DESTINATION include/${PROJECT_NAME}
 )

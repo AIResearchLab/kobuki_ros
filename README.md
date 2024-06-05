@@ -1,15 +1,17 @@
 Kobuki
 ======
 
-This repository holds the ROS wrapper of [Kobuki's C++ driver](https://github.com/yujinrobot/kobuki_core) plus various ROS tools and applications.
+This repository is an extention of the original [repository](https://github.com/kobuki-base/kobuki_ros) that combines all available public repositories.
 
-![Kobuki Logo](http://kobuki.yujinrobot.com/wp-content/uploads/2015/07/iclebo-kobuki-logo-e1437635225432.png)
-
-### Documentation ###
-
-* [Official Web Page](http://kobuki.yujinrobot.com) - home page, sales, specifications and hardware howto.
-* [Protocol, Usage and Api Documentation](http://yujinrobot.github.com/kobuki/doxygen/index.html) - in doxygen.
-* [Ros Usage and Tutorials](http://www.ros.org/wiki/kobuki) - on the roswiki.
-* [Turtlebot Reference Platform](http://www.ros.org/wiki/Robots/TurtleBot) - kobuki has been designed to meet the requirements of [ROS REP #119](http://www.ros.org/reps/rep-0119.html) to support turtlebot.
+Original repository holds the ROS2 wrapper of [Kobuki's C++ driver](https://github.com/yujinrobot/kobuki_core) plus various ROS tools and applications.
 
 
+<br>
+
+## Merged forks
+
+|Version        | Fork          | Merged | Tested |
+|:---:	        |---	        |:---:	 |:---:	  |
+|   	        |   	        | - []   | - [ ]  |
+|   	        |   	        |   	 |   	  |
+|   	        |   	        |   	 |   	  |

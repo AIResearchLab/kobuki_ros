@@ -10,8 +10,7 @@ Original repository holds the ROS2 wrapper of [Kobuki's C++ driver](https://gith
 
 ## Merged forks
 
-|Version        | Fork          | Merged | Tested |
-|:---:	        |---	        |:---:	 |:---:	  |
-|   	        |   	        |&#9745; | &#9744;   |
-|   	        |   	        |   	 |   	  |
-|   	        |   	        |   	 |   	  |
+|Version | Fork                                 | Merged    | Tested   |
+|:---:	 |---	                                |:---:	    |:---:	   |
+|0.1.0 	 | [Carlosalpha1/kobuki_ros](https://github.com/Carlosalpha1/kobuki_ros)  	                       |&#9744;|&#9744;|
+|0.1.0   | [AI-Robot-Book/kobuki_ros_airobotbook](https://github.com/AI-Robot-Book/kobuki_ros_airobotbook) |&#9745;|&#9745;|

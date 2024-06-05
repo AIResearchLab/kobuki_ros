@@ -12,6 +12,6 @@ Original repository holds the ROS2 wrapper of [Kobuki's C++ driver](https://gith
 
 |Version        | Fork          | Merged | Tested |
 |:---:	        |---	        |:---:	 |:---:	  |
-|   	        |   	        | - []   | - [ ]  |
+|   	        |   	        |&#9745; | &#9744;   |
 |   	        |   	        |   	 |   	  |
 |   	        |   	        |   	 |   	  |

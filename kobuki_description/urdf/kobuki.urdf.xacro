@@ -220,6 +220,13 @@
       </inertial>
     </link>
 
+    <joint name="camera_joint" type="fixed">
+      <origin xyz="0.037 -0.002 0.559" rpy="0.0003 0.5032 -0.0309" />
+      <parent link="base_footprint"/>
+      <child link="camera_link" />
+    </joint>
+    <link name="camera_link"/>
+
     <!-- Kobuki Gazebo simulation details -->
     <xacro:kobuki_sim/>
 

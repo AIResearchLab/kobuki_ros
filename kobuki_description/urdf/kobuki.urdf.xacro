@@ -29,6 +29,7 @@
       <parent link="base_link"/>
       <child link="base_footprint" />
     </joint>
+    
     <link name="base_link">
       <visual>
         <geometry>

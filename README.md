@@ -12,7 +12,7 @@ Original repository holds the ROS2 wrapper of [Kobuki's C++ driver](https://gith
 
 |Version | Fork                                                                                            | Merged | Tested |
 |:---:	 |---	                                                                                           |:---:   |:---:	 |
-<!-- |0.1.0 	 | [YuZhong-Chen/kobuki_ros](https://github.com/YuZhong-Chen/kobuki_ros) 	                       |&#9745; |&#9745; | -->
+|0.1.0 	 | [Juancams/kobuki_ros](https://github.com/Juancams/kobuki_ros)  	                               |&#9744; |&#9744; |
 |0.1.0 	 | [Sirius-OIT/kobuki_ros](https://github.com/Sirius-OIT/kobuki_ros)  	                           |&#9745; |&#9745; |
 |0.1.0 	 | [michieletto/kobuki_ros](https://github.com/michieletto/kobuki_ros)  	                       |&#9745; |&#9745; |
 |0.1.0 	 | [ME465-SPR2023/kobuki_ros](https://github.com/ME465-SPR2023/kobuki_ros)  	                   |&#9745; |&#9745; |

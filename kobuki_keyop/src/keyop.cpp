@@ -87,7 +87,7 @@ KeyOp::KeyOp(const rclcpp::NodeOptions & options) : rclcpp::Node("kobuki_keyop_n
    **********************/
   double linear_vel_step = this->declare_parameter("linear_vel_step", 0.1);
   double linear_vel_max = this->declare_parameter("linear_vel_max", 3.4);
-  double angular_vel_step = this->declare_parameter("angular_vel_step", 0.02);
+  double angular_vel_step = this->declare_parameter("angular_vel_step", 0.1);
   double angular_vel_max = this->declare_parameter("angular_vel_max", 1.2);
 
   RCLCPP_INFO(get_logger(), "KeyOp : using linear  vel step [%f].", linear_vel_step);

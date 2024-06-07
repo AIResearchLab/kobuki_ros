@@ -10,10 +10,6 @@ def generate_launch_description():
 
     teleop_config = os.path.join( get_package_share_directory('kobuki_joyop'), 'param', 'teleop_config.yaml')
 
-    kobuki_node_launch = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(os.path.join(get_package_share_directory('kobuki_node'), 'launch', 'kobuki_node-launch.py'))
-    )
-
     joystickNode=Node(
             package='joy',
             namespace='',
@@ -33,7 +29,6 @@ def generate_launch_description():
             arguments=['--ros-args', '--log-level', 'info']
     )
 
-    ld.add_action(kobuki_node_launch)
     ld.add_action(joystickNode)
     ld.add_action(teleopJoystickNode)
     
